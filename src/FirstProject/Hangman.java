@@ -112,7 +112,7 @@ public class Hangman {
 
     private static String chooseRandomWord() throws IOException {
         Random random = new Random();
-        List<String> list = Files.readAllLines(Path.of("WordsForHangman.txt"));
+        List<String> list = Files.readAllLines(Path.of("src/FirstProject/WordsForHangman.txt"));
         return list.get(random.nextInt(list.size())).toLowerCase();
     }
 
